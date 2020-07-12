@@ -342,6 +342,28 @@
 
                 
                 
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%B1%E4%B8%9A/%E6%94%BF%E5%BA%9C%E9%83%A8%E9%97%A8/" itemprop="url" rel="index">
+                    <span itemprop="name">政府部门</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%B1%E4%B8%9A/%E7%A8%B3%E5%AE%9A/" itemprop="url" rel="index">
+                    <span itemprop="name">稳定</span>
+                  </a>
+                </span>
+
+                
+                
               
             </span>
           
@@ -354,8 +376,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2020/07/10/%E9%80%89%E8%B0%83%E7%94%9F/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/07/10/选调生/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/10/%E9%80%89%E8%B0%83%E7%94%9F/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -516,8 +537,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2020/07/10/third/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/07/10/third/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/10/third/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -681,8 +701,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2020/07/09/second/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/07/09/second/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/09/second/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -811,8 +830,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2020/07/02/My-New-Post/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/07/02/My-New-Post/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/02/My-New-Post/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -941,8 +959,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2020/07/02/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/07/02/hello-world/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/07/02/hello-world/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -1081,7 +1098,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1254,9 +1271,6 @@
 
 
 
-  
-  
-
 
 
 
@@ -1300,16 +1314,6 @@
     <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/three/three.min.js"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
-  
-
 
   
 
@@ -1344,14 +1348,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://senhao.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -1367,12 +1363,38 @@
 
 
 
+  
 
 
 
 
 
 
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'SHp2rTzx6wwIl0v6y3wT8A5X-gzGzoHsz',
+        appKey: 'zNcM1abEdSqnkwoulKfrQXf6',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
